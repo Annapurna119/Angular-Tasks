@@ -1,0 +1,20 @@
+<p>This is my practice {{title}}</p>
+<div>
+    <h1>Products</h1>
+    <div *ngFor="Let Display the  products">
+        <a [title]="product.name+ 'details' ">{{product.name}}</a>
+    <
+
+    <p *ngIf="product.description">
+      Description: {{ product.description }}
+    </p>
+  
+    <button (click)="share()">
+      Share
+    </button>
+    <p *ngIf="product.price > 700">
+        <button (click)="notify.emit()">Notify Me</button>
+      </p>
+  
+    </div>
+</div>

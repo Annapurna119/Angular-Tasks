@@ -1,0 +1,16 @@
+<h1>My Task List</h1>
+<input #in type="text" (keyup.enter)="onEnter(in)">
+
+<div>
+  <ul   
+    *ngFor="let i of taskList"> <input type="checkbox" [(ngModel)]="check">
+    {{i}}
+  </ul>
+
+  <div> 
+  <input type="button" ng-disabled= "!check.valid" value="Edit">
+  
+  
+</div>
+</div>
+
