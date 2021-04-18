@@ -3,14 +3,13 @@
 
 <div>
   <ul   
-    *ngFor="let i of taskList"> <input type="checkbox" [(ngModel)]="check">
+    *ngFor="let i of taskList"> <input #check type="checkbox" (click)="enableButton(check)">
     {{i}}
   </ul>
 
   <div> 
-  <input type="button" ng-disabled= "!check.valid" value="Edit">
-  
-  
-</div>
+  <input id="edi" type="button" value="Edit" disabled>
+  <input id="del" type="button" value="Delete" disabled>
+  </div>
 </div>
 
