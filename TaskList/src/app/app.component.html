@@ -1,5 +1,8 @@
-<h1>My Task List</h1>
-<input #in type="text" (keyup.enter)="onEnter(in)">
+<div class="header"><h1>MyTaskList</h1></div>
+<br>
+<div id="txt">
+<input #in type="text" placeholder="Add Task..." (keyup.enter)="onEnter(in)">
+</div><br>
 
 <div>
   <ul   

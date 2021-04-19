@@ -1,0 +1,21 @@
+.header {
+    background-color: #a0db15;
+    text-align: center;
+    
+    width: 15%;
+    height: 50px;
+  }
+  #txt {
+    padding: 0;
+  height: 30px;
+  position: relative;
+  left: 0;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, .15);
+  background-color:white;
+  font-size: 30px;
+  width: fit-content;
+  }
+
+ 
