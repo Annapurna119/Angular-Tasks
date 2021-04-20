@@ -3,13 +3,11 @@
 <div id="txt">
 <input #in type="text" placeholder="Add Task..." (keyup.enter)="onEnter(in)">
 </div><br>
-
 <div>
   <ul   
     *ngFor="let i of taskList"> <input #check type="checkbox" (click)="enableButton(check)">
     {{i}}
   </ul>
-
   <div> 
   <input id="edi" type="button" value="Edit" disabled>
   <input id="del" type="button" value="Delete" disabled>
