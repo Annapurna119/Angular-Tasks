@@ -7,7 +7,7 @@
   <ul   
     *ngFor="let i of taskList"> <input #check style="float: left;" type="checkbox" [checked]>
     {{i}} 
-     <button id="del" (click)="onDelete()" >Delete</button>
+     <button id="del" (click)="onDelete() " >Delete</button>
   </ul>
  </div>
 </div>
