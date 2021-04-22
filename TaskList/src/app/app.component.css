@@ -1,22 +1,26 @@
 .header {
     background-color: #a0db15;
     text-align: center;
-    
-    width: 15%;
+    align-items: center;
+    width: 50%;
     height: 50px;
   }
   #txt {
     padding: 0;
   height: 50px;
-  width: 70px;
+  width: 100%;
   position: relative;
   left: 0px;
-  outline: none;
-  border: 2px solid #b43737d5;  
+  outline:#1a1d15;
+  border: 8px solid #b43737d5;  
   border-color: rgba(128, 117, 117, 0.15);
-  background-color:white;
+  background-color:rgb(226, 87, 180);
   font-size: 30px;
-  width: fit-content;
+  
+  }
+  #del{
+   align-items: flex-end;
+   float: right;
   }
 
  

@@ -1,4 +1,6 @@
-import { Component} from '@angular/core';
+import { Component, NgModule} from '@angular/core';
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,22 +9,32 @@ import { Component} from '@angular/core';
 export class AppComponent {
   title = 'TaskList';  
   taskList = [];
-  onEnter(abc)
+   
+  
+  onEnter(abc:any)
   {
     this.taskList.push(abc.value)
     abc.value = ''    
   }
-  
-  enableButton(check)
-  {
-    if(check.checked)
-    {
-      (document.getElementById('edi') as HTMLInputElement).disabled = false;
-      (document.getElementById('del') as HTMLInputElement).disabled = false;
-    }
-    else{
-      (document.getElementById('edi') as HTMLInputElement).disabled = true;
-      (document.getElementById('del') as HTMLInputElement).disabled = true;
+
+ onDelete(i){
+    this.taskList.splice(i,1)
     }
   }
-}
+
+
+
+  //enableButton(i){
+   
+   // if(event.target.checked){
+    //  (document.getElementById('del') as HTMLInputElement).disabled = false;
+   //   this.toggleButton = false;
+   // }
+    //else{
+      //this.toggleButton = true;
+    //}
+  //}
+
+
+ 
+
