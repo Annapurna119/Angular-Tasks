@@ -8,7 +8,7 @@ import { Component, NgModule} from '@angular/core';
 })
 export class AppComponent {
   title = 'TaskList';  
-  taskList = [];
+  taskList =[];
    
   
   onEnter(abc:any)
