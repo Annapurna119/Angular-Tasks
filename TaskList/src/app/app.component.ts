@@ -1,4 +1,5 @@
 import { Component, NgModule} from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
@@ -6,9 +7,12 @@ import { Component, NgModule} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
   title = 'TaskList';  
   taskList =[];
+ 
    
   
   onEnter(abc:any)
@@ -20,6 +24,9 @@ export class AppComponent {
  onDelete(i){
     this.taskList.splice(i,1)
     }
+ 
+    username:String="";
+   
   }
 
 
@@ -33,8 +40,7 @@ export class AppComponent {
     //else{
       //this.toggleButton = true;
     //}
-  //}
-
+  //} 
 
  
 

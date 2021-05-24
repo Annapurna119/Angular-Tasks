@@ -1,0 +1,23 @@
+.header{
+    background-color: lightcoral;
+    text-align: center;
+}
+
+h2{
+    color: blue;
+}
+#in{
+    width:250;
+    height:30;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 7px;
+}
+
+button{
+    margin: 10px; ;
+    padding:;
+    color:white;
+    background-color:black;
+    border: radius 30px;
+}

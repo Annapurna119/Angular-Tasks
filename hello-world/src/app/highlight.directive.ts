@@ -1,11 +1,15 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef, Input ,OnInit} from '@angular/core';
 
 @Directive({
-  selector: '[appHighlight]'
+  selector:  '[appHighlight]'
 })
-export class HighlightDirective {
+export class HighlightDirective implements OnInit{
+  @Input('appHighlight')  highlight:string;
 
-  constructor() { }
+  constructor(private el : ElementRef) { }
+  ngOnInit(): void {
+    this.el.nativeElement.classList.add(this.highlight)
+  }
 
   
 

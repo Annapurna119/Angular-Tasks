@@ -1,0 +1,15 @@
+<button [appHighlight]="'yellow'">Click</button>
+
+<app-child [data]="myName" (emitter)="onEvent($event)" ></app-child>
+
+
+
+
+
+<ng-container *ngIf="child ; else elseTemplate">
+    <p>child to parent data::{{ChildData}}</p>
+</ng-container>
+
+<ng-template #elseTemplate>
+    <p>parent have nothing</p>
+</ng-template>
