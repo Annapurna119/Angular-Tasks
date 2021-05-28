@@ -1,0 +1,20 @@
+
+<div class="catfilter">
+    <div class="category-list mat-elevation-z4">
+     <div [class.active-category] ="!category" routerLink="/">
+         <a>All Categories</a>
+     </div>
+    
+     <div></div>
+     <div></div>
+     
+     <div [class.active-category] ="category== (c.categoryName | lowercase)"
+         *ngFor="let c of categories$ | async" routerLink="/filter"
+         [queryParams]="{category:c.categoryName | lowercase}">
+         <a>{{c.categoryName}}</a>
+         
+         <div></div>
+ </div>
+ 
+</div>
+ </div>

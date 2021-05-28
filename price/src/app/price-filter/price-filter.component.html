@@ -1,0 +1,26 @@
+<div class="docs-example-viewer-wrapper">
+    <div class="docs-example-viewer-title mat-elevation-z2">
+      <div class="docs-example-viewer-title-spacer">
+        <h4>Price Filter</h4>
+      </div>
+    </div>
+    <!-- <input type="range"
+    min="1"
+    max="10"
+    value="{{step}}"
+    (change)="onChange($event)">
+    <br> -->
+
+    <span class="docs-example-viewer-body">
+        <mat-slider [max]="max" [min]="min"
+      [(ngModel)]="value" (change)="onChange($event)"> 
+    </span>
+    
+   
+    <div class="d-flex justify-content-around price-range">
+      <div><strong>{{min | currency: 'INR'}}</strong></div>
+      <div>to</div>
+      <div><strong>{{value | currency: 'INR'}}</strong></div>
+    </div>
+ </div>
+  

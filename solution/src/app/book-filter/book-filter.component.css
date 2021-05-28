@@ -1,0 +1,15 @@
+.catfilter{
+ color:green;
+ background: hsl(17, 88%, 47%);
+ border-radius: 10px;
+ padding: 5px 5px 5px;
+}
+
+
+.category-list {
+  padding: 5px 5px 5px;
+}
+
+.active-category {
+  background-color: color-active !important;
+}

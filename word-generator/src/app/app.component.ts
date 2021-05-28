@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'word-generator';
 
 words='';
-limit=10;
+limit=55000;
 handleSlideChange(newLimit:number){
   this.limit = newLimit;
 }
